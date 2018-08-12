@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">sandbox</string>
+    <string name="animate_layout_changes">Animate Layout Changes</string>
+    <string name="animate_visibility">Animate Visibility</string>
+    <string name="animate_layout_params">Animate LayoutParams</string>
+
+
+</resources>
