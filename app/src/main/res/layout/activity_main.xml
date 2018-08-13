@@ -18,6 +18,11 @@
             android:text="@string/animate_layout_changes"
             android:onClick="showAnimateLayoutChangesFragment"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/transition_manager_layout_changes"
+            android:onClick="showTransitionManagerLayoutChangesFragment"/>
 
     </LinearLayout>
 

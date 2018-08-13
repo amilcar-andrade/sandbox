@@ -22,6 +22,11 @@ public class MainActivity extends AppCompatActivity {
                 AnimateLayoutChangesFragment.TAG, false, true);
     }
 
+    public void showTransitionManagerLayoutChangesFragment(View ignored) {
+        replaceFragment(this, R.id.container, TransitionManagerLayoutChangesFragment.newInstance(),
+                TransitionManagerLayoutChangesFragment.TAG, false, true);
+    }
+
 
     public static void replaceFragment(@NonNull FragmentActivity activity,
                                        int containerViewId,
