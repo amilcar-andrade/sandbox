@@ -24,6 +24,12 @@
             android:text="@string/transition_manager_layout_changes"
             android:onClick="showTransitionManagerLayoutChangesFragment"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/shrink_linear_layout"
+            android:onClick="showShrinkLinearLayoutFragment"/>
+
     </LinearLayout>
 
 </FrameLayout>

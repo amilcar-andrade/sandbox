@@ -2,10 +2,18 @@
     <string name="app_name">sandbox</string>
     <string name="animate_layout_changes">Animate Layout Changes</string>
     <string name="transition_manager_layout_changes">Transition Manager Layout Changes</string>
+    <string name="shrink_linear_layout">Shrink transition with LL </string>
 
 
     <string name="animate_visibility">Animate Visibility</string>
     <string name="animate_layout_params">Animate LayoutParams</string>
+
+    <string name="alarm">Alarm</string>
+    <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
+    <string name="call_000">Call 000</string>
+    <string name="help">Help</string>
+    <string name="im_ok">IM OKAY</string>
+    <string name="triggering_alarm">Triggering alarm</string>
 
 
 </resources>

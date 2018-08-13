@@ -27,8 +27,13 @@ public class MainActivity extends AppCompatActivity {
                 TransitionManagerLayoutChangesFragment.TAG, false, true);
     }
 
+    public void showShrinkLinearLayoutFragment(View ignored) {
+        replaceFragment(this, R.id.container, ShrinkLinearLayoutFragment.newInstance(),
+                ShrinkLinearLayoutFragment.TAG, false, true);
+    }
 
-    public static void replaceFragment(@NonNull FragmentActivity activity,
+
+    private static void replaceFragment(@NonNull FragmentActivity activity,
                                        int containerViewId,
                                        @NonNull Fragment fragment,
                                        @NonNull String fragmentTag,
