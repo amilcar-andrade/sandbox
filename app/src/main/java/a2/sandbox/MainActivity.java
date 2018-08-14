@@ -32,6 +32,11 @@ public class MainActivity extends AppCompatActivity {
                 ShrinkLinearLayoutFragment.TAG, false, true);
     }
 
+    public void showShrinkConstraintLayoutFragment(View ignored) {
+        replaceFragment(this, R.id.container, ShrinkConstraintLayoutFragment.newInstance(),
+                ShrinkConstraintLayoutFragment.TAG, false, true);
+    }
+
 
     private static void replaceFragment(@NonNull FragmentActivity activity,
                                        int containerViewId,
