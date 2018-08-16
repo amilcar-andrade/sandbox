@@ -7,6 +7,7 @@
 
     <string name="animate_visibility">Animate Visibility</string>
     <string name="animate_layout_params">Animate LayoutParams</string>
+    <string name="auto_transition">Use AutoTransition?</string>
 
     <string name="alarm">Alarm</string>
     <string name="lorem">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat</string>
