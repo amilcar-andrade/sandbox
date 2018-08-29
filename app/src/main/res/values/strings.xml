@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">sandbox</string>
+    <!-- Index -->
+    <string name="transitions_without_act_frag">Transitions without Activities or Fragments</string>
+
     <string name="animate_layout_changes">Animate Layout Changes</string>
     <string name="transition_manager_layout_changes">Transition Manager Layout Changes</string>
     <string name="shrink_linear_layout">Shrink transition with LL </string>
