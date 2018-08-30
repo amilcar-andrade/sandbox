@@ -1,4 +1,4 @@
-package a2.sandbox;
+package a2.sandbox.transitions_no_frag_act;
 
 import android.support.annotation.NonNull;
 import android.support.v4.app.Fragment;
@@ -8,6 +8,8 @@ import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
+
+import a2.sandbox.R;
 
 public class TransitionsWithoutActivitiesFragments extends AppCompatActivity {
 

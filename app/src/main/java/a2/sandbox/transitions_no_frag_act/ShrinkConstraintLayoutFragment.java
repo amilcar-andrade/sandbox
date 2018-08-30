@@ -1,4 +1,4 @@
-package a2.sandbox;
+package a2.sandbox.transitions_no_frag_act;
 
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -18,6 +18,8 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.CheckBox;
 import android.widget.CompoundButton;
+
+import a2.sandbox.R;
 
 public class ShrinkConstraintLayoutFragment extends Fragment implements View.OnClickListener, CompoundButton.OnCheckedChangeListener {
 

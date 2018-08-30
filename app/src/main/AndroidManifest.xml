@@ -16,6 +16,7 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".TransitionsWithoutActivitiesFragments" />
+        <activity android:name=".transitions_no_frag_act.TransitionsWithoutActivitiesFragments" />
+        <activity android:name=".learning_rx.RxJavaIndexActivity" />
     </application>
 </manifest>

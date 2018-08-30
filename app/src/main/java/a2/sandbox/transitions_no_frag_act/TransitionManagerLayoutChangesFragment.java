@@ -1,4 +1,4 @@
-package a2.sandbox;
+package a2.sandbox.transitions_no_frag_act;
 
 import android.content.res.Resources;
 import android.os.Bundle;
@@ -9,6 +9,8 @@ import android.transition.TransitionManager;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import a2.sandbox.R;
 
 // Watch - https://youtu.be/9Y5cbC5YrOY?t=8m40s
 public class TransitionManagerLayoutChangesFragment extends Fragment implements View.OnClickListener{

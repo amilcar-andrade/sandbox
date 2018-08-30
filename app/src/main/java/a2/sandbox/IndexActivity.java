@@ -6,6 +6,9 @@ import android.support.annotation.Nullable;
 import android.support.v7.app.AppCompatActivity;
 import android.view.View;
 
+import a2.sandbox.learning_rx.RxJavaIndexActivity;
+import a2.sandbox.transitions_no_frag_act.TransitionsWithoutActivitiesFragments;
+
 public class IndexActivity extends AppCompatActivity {
 
     @Override
@@ -16,5 +19,9 @@ public class IndexActivity extends AppCompatActivity {
 
     public void startTransitionWithoutActFragActivity(View view) {
         startActivity(new Intent(this, TransitionsWithoutActivitiesFragments.class));
+    }
+
+    public void startLearningRx(View view) {
+        startActivity(new Intent(this, RxJavaIndexActivity.class));
     }
 }

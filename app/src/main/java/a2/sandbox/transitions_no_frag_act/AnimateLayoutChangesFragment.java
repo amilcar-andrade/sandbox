@@ -1,4 +1,4 @@
-package a2.sandbox;
+package a2.sandbox.transitions_no_frag_act;
 
 import android.animation.LayoutTransition;
 import android.content.res.Resources;
@@ -9,6 +9,8 @@ import android.support.v4.app.Fragment;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
+
+import a2.sandbox.R;
 
 // Watch - https://youtu.be/55wLsaWpQ4g and https://youtu.be/9Y5cbC5YrOY?t=6m54s
 public class AnimateLayoutChangesFragment extends Fragment implements View.OnClickListener{
