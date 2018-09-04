@@ -18,5 +18,6 @@
         </activity>
         <activity android:name=".transitions_no_frag_act.TransitionsWithoutActivitiesFragments" />
         <activity android:name=".learning_rx.RxJavaIndexActivity" />
+        <activity android:name=".kotlin_action.KotlinActivity" />
     </application>
 </manifest>

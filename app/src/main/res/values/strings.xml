@@ -3,6 +3,8 @@
     <!-- Index -->
     <string name="transitions_without_act_frag">Transitions without Activities or Fragments</string>
     <string name="learning_rx_java">Learning RxJava</string>
+    <string name="kotlin_in_action">Kotlin in Action</string>
+
     <string name="book">Book</string>
 
     <string name="animate_layout_changes">Animate Layout Changes</string>

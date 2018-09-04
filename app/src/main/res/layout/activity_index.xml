@@ -23,6 +23,12 @@
             android:text="@string/learning_rx_java"
             android:onClick="startLearningRx"/>
 
+        <Button
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/kotlin_in_action"
+            android:onClick="startKotlinInAction"/>
+
     </LinearLayout>
 
 </ScrollView>
