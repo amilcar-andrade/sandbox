@@ -5,13 +5,16 @@
     android:layout_height="match_parent">
 
     <LinearLayout
+        android:id="@+id/container"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <Button
+            android:id="@+id/chapter_one"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:text="@string/book"/>
+            android:text="@string/chapter_one_rx"
+            android:onClick="showChapters"/>
 
     </LinearLayout>
 

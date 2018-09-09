@@ -5,7 +5,7 @@
     <string name="learning_rx_java">Learning RxJava</string>
     <string name="kotlin_in_action">Kotlin in Action</string>
 
-    <string name="book">Book</string>
+    <string name="chapter_one_rx">Chapter One</string>
 
     <string name="animate_layout_changes">Animate Layout Changes</string>
     <string name="transition_manager_layout_changes">Transition Manager Layout Changes</string>

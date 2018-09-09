@@ -1,14 +1,10 @@
 package a2.sandbox.transitions_no_frag_act;
 
-import android.support.annotation.NonNull;
-import android.support.v4.app.Fragment;
-import android.support.v4.app.FragmentActivity;
-import android.support.v4.app.FragmentManager;
-import android.support.v4.app.FragmentTransaction;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
 
+import static a2.sandbox.IndexActivity.replaceFragment;
 import a2.sandbox.R;
 
 public class TransitionsWithoutActivitiesFragments extends AppCompatActivity {
@@ -37,24 +33,5 @@ public class TransitionsWithoutActivitiesFragments extends AppCompatActivity {
     public void showShrinkConstraintLayoutFragment(View ignored) {
         replaceFragment(this, R.id.container, ShrinkConstraintLayoutFragment.newInstance(),
                 ShrinkConstraintLayoutFragment.TAG, false, true);
-    }
-
-
-    private static void replaceFragment(@NonNull FragmentActivity activity,
-                                       int containerViewId,
-                                       @NonNull Fragment fragment,
-                                       @NonNull String fragmentTag,
-                                       boolean forceReplacement,
-                                       boolean addToBackStack) {
-        FragmentManager fragmentManager = activity.getSupportFragmentManager();
-        Fragment newFragment = fragmentManager.findFragmentByTag(fragmentTag);
-        if (newFragment == null || forceReplacement) {
-            newFragment = fragment;
-        }
-        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction().replace(containerViewId, newFragment, fragmentTag);
-        if (addToBackStack) {
-            fragmentTransaction.addToBackStack(fragmentTag);
-        }
-        fragmentTransaction.commit();
     }
 }
