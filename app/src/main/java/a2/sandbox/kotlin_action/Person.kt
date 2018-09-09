@@ -1,7 +1,11 @@
 package a2.sandbox.kotlin_action
 
-// Default value set to null
-data class Person internal constructor(val name : String, val age : Int? = null) {
+/**
+ * Classes containing only data but no code are ofter called value objects, and many languages offer a concise syntax
+ * for declaring them. In Kotlin, public is the default visbility, so you can omit it.
+ */
+data class Person internal constructor(val name : String, val age : Int? = null) { // Default value set to null
+
 
     // Regular function for just the Person object
     fun findOldestPerson(persons: List<Person>): Person {
@@ -10,3 +14,18 @@ data class Person internal constructor(val name : String, val age : Int? = null)
         return maxBy ?: Person("Ghost")
     }
 }
+
+/**
+ * JAVA
+ * public class Person {
+ *   private final String name;
+ *
+ *   public Person(String name) {
+ *      this.name = name;
+ *   }
+ *
+ *   public String getName() {
+ *      return this.name;
+ *   }
+ * }
+ */

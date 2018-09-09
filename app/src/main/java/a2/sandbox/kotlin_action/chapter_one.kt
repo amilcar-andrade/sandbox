@@ -1,17 +1,5 @@
 package a2.sandbox.kotlin_action
 
-// Defines a Person data class in just a file, no need to be inside of a class file
-data class PersonNoClazz(val name : String, val age : Int? = null ) // Default value set to null
-
-/**
- * Extension function of person no class object
- */
-fun findOldestPersonNoClazz(persons : List<PersonNoClazz>) : PersonNoClazz {
-    val maxBy = persons.maxBy { it.age ?: 0 }
-    // Because maxBy returns a null if we do not find a person, I am deciding to return a dummy one
-    return maxBy ?: PersonNoClazz("Ghost")
-}
-
 /**
  * Summary
  *
@@ -43,7 +31,16 @@ fun findOldestPersonNoClazz(persons : List<PersonNoClazz>) : PersonNoClazz {
  *  - Data classes, providing concise syntax for creating immutable value objects
  *  - Standard library for objects and collections in a functional style
  *
- *
- *
- *
- * **/
+ **/
+
+// Defines a Person data class in just a file, no need to be inside of a class file
+class PersonNoClazz(val name : String, val age : Int? = null ) // Default value set to null
+
+/**
+ * Extension function of person no class object
+ */
+fun findOldestPersonNoClazz(persons : List<PersonNoClazz>) : PersonNoClazz {
+    val maxBy = persons.maxBy { it.age ?: 0 }
+    // Because maxBy returns a null if we do not find a person, I am deciding to return a dummy one
+    return maxBy ?: PersonNoClazz("Ghost")
+}
