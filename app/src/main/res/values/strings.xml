@@ -6,6 +6,8 @@
     <string name="kotlin_in_action">Kotlin in Action</string>
 
     <string name="chapter_one_rx">Chapter One</string>
+    <string name="chapter_two_rx">Chapter Two</string>
+
 
     <string name="animate_layout_changes">Animate Layout Changes</string>
     <string name="transition_manager_layout_changes">Transition Manager Layout Changes</string>

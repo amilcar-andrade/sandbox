@@ -6,6 +6,7 @@
 
     <LinearLayout
         android:id="@+id/container"
+        android:orientation="vertical"
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
@@ -14,6 +15,13 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:text="@string/chapter_one_rx"
+            android:onClick="showChapters"/>
+
+        <Button
+            android:id="@+id/chapter_two"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/chapter_two_rx"
             android:onClick="showChapters"/>
 
     </LinearLayout>

@@ -25,6 +25,9 @@ public class RxJavaIndexActivity extends AppCompatActivity {
             case R.id.chapter_one:
                 addInvisibleFragment(this, new ChapterOne(), ChapterOne.TAG);
                 break;
+            case R.id.chapter_two:
+                addInvisibleFragment(this, new ChapterTwo(), ChapterTwo.TAG);
+                break;
         }
     }
 
