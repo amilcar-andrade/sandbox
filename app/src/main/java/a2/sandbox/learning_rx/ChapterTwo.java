@@ -1,6 +1,7 @@
 package a2.sandbox.learning_rx;
 
 import android.os.Bundle;
+import android.support.annotation.NonNull;
 import android.support.annotation.Nullable;
 import android.support.v4.app.Fragment;
 
@@ -8,12 +9,14 @@ import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.Callable;
 
+import io.reactivex.Completable;
 import io.reactivex.Maybe;
 import io.reactivex.Observable;
 import io.reactivex.ObservableEmitter;
 import io.reactivex.ObservableOnSubscribe;
 import io.reactivex.Observer;
 import io.reactivex.disposables.Disposable;
+import io.reactivex.functions.Action;
 import io.reactivex.observables.ConnectableObservable;
 
 
@@ -328,7 +331,7 @@ public class ChapterTwo extends Fragment {
 
         // Maybe empty
         Maybe.empty().subscribe(
-                s -> System.out.println("Excluse this is not going to get printed: " + s),
+                s -> System.out.println("This is not going to get printed, because there are no emissions it just completes: " + s),
                 Throwable::printStackTrace,
                 () -> System.out.println("Maybe empty done!"));
 
@@ -355,5 +358,26 @@ public class ChapterTwo extends Fragment {
                 // done
             }
         };
+
+        // Completable
+        Completable.fromRunnable(new Runnable() {
+            @Override
+            public void run() {
+                runThisMethod("Completable - new Runnable");
+            }
+        }).subscribe(() -> System.out.println("onComplete()"));
+
+        // new Acton allows you to throw a checked Exception!
+        Completable.fromAction(new Action() {
+            @Override
+            public void run() throws Exception {
+                runThisMethod("Completable - new Action");
+            }
+        }).subscribe(() -> System.out.println("onComplete()"));
+
+    }
+
+    private void runThisMethod(@NonNull String from) {
+        System.out.println("Run this method inside of a Runnable and using a: " + from);
     }
 }
